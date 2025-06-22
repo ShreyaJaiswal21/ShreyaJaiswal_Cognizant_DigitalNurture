@@ -1,0 +1,15 @@
+big O notation ---> O --> this describes time complexity or space complexity of an algorithm in terms of its input size(n).
+
+Let size of array=n
+
+Linear Search:
+Best Case-->O(1)--->Loop runs once because target item is present at first index.
+Average Case-->O(n/2)--->Item occurs in the middle of array
+Worst Case-->O(n)--->Last item or target item is absent
+
+Binary Search:
+Best Case-->O(1)--->Loop runs once because target item is present at first index.
+Average & worst case--->O(log n)--->multiple divisions of the array to find the target item.
+
+
+in real world e-commerce platforms binary Search is used.it works efficiently for millions of items and provides scalable search.
