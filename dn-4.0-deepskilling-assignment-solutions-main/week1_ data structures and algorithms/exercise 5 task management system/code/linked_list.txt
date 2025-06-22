@@ -1,0 +1,16 @@
+Singly Linked List--->Each node contains data and a reference to the next node.
+Doubly Linked List-->Each node contains data and a reference to the next node and reference to the previous node.
+
+
+Time Complexity:
+
+Addition--->O(n)-->Traverse the entire linked list to insert 
+Searching-->O(n)-->Linear search through the list
+Deletion-->O(n)-->Linear search through the list and delete element by ID	
+Display Tasks-->O(n)-->Traverse each node and print the value or data in the nodes
+
+Advantages of Linked lists over Arrays:
+
+-->Linked lists are dynamic in nature .They grow dynamically in size as per when required contrary to arrays which have a fixed size.
+--->In arrays memory often preallocated and may lead to wastage if not used but this does not happen in linked lists.
+

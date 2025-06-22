@@ -1,0 +1,17 @@
+Bubble Sort--->Works by comparing adjacent elements and swaps them if they are in the wrong order.
+Insertion Sort--->Builds the sorted array one item at a time by inserting elements into their correct position.
+Quick sort--->Picks a pivot and partitions the array so that elements smaller than pivot are left, larger ones right.Uses recursion for sorting pairs.
+
+
+Time complexity:
+
+Bubble Sort:
+Best Case (already sorted)-->O(n)
+Average & Worst Case---> O(n^2)
+
+Quick Sort:
+Best & Average Case-->O(n log n)
+Worst Case--> O(n²)--->bad pivot position
+
+
+Bubble sort is not used in industry level projects while quick sort is faster for large datasets by using divide and conquer but bubble sort performs multiple swaps as input size grows.

@@ -1,0 +1,11 @@
+Add operation--->O(1)
+Delete operation-->O(1)
+Update operation-->O(1)
+
+In all the above 3 operations we are dealing with one product at a time.
+
+for viewing inventory, time complexity--->O(n)--->looping through the entire data structure linearly.(n=total number of products)
+
+optimization steps:
+for thread safe operations ConcurrentHashMap can be used,
+for further optimization secondary maps can also be used

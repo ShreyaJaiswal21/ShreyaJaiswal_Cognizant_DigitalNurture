@@ -1,0 +1,23 @@
+Arrays are contiguous blocks of memory where each element is stored at a fixed offset.
+
+Advantages of Arrays:
+--->Fast access to elements using indices.
+--->Simplicity in implementation.
+
+
+Time complexity:
+
+Add operation-->O(1)--->Appending every entry at the last available index.
+Search operation--->O(n)--->Iterating linearly through the Arrays
+Delete operation--->O(n)-->Linear iteraion through the array to Delete the element
+Traverse--->O(n)--->Linearly iterating through the array to access every element
+
+Limitations of Arrays:
+--->Fixed size
+--->Non-dynamic in nature
+--->Wastage of memory if allocated memory not used
+
+Arrays should be used:
+-->When the number of elements is known and small
+--->Frequent access is mandatory
+--->For simple implementation

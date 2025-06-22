@@ -1,0 +1,18 @@
+Linear Search-->scans elements one by one until found or end reached.This works good for unsorted data and similar datsets
+
+Binary Search-->Repeatedly divide a sorted list into halves.Used for large sorted datasets.Based on the concept of divide and conquer.
+
+Time complexity-->
+
+Linear Search:
+
+Best Case-->O(1)
+Average/Worst case-->O(n)
+
+Binary Search:
+
+Best Case-->O(1)
+Average/Worst case-->O(log n)
+
+Linear search should be used when list is unsorted/small and for small number of searches
+Binary search should be used when list is large and sorted and repeated search and big dataset
