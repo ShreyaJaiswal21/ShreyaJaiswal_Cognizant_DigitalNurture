@@ -1,0 +1,3 @@
+20:15:57.893 [main] INFO  com.example.AppenderExample - This message goes to both console and file!
+20:15:57.897 [main] WARN  com.example.AppenderExample - Warning message logged to file and console.
+20:15:57.898 [main] ERROR com.example.AppenderExample - Critical error happened in the system!
