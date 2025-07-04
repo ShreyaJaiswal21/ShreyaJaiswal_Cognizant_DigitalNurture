@@ -1,0 +1,4 @@
+com\example\bookapp\Book.class
+com\example\bookapp\BookRepository.class
+com\example\bookapp\BookService.class
+com\example\bookapp\BookDependencyApplication.class
