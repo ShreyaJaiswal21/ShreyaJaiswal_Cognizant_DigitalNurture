@@ -1,0 +1,45 @@
+$ git checkout master
+git status
+Already on 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        debug.log
+        log/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git branch -a
+  main
+* master
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/master
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git pull origin master
+From https://gitlab.com/mitrajit-55-group/GitDemo
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git push origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 1.18 KiB | 1.18 MiB/s, done.
+Total 12 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for master, visit:
+remote:   https://gitlab.com/mitrajit-55-group/GitDemo/-/merge_requests/new?merge_request%5Bsource_branch%5D=master
+remote:
+To https://gitlab.com/mitrajit-55-group/GitDemo.git
+   9785766..7a4b2fc  master -> master
+

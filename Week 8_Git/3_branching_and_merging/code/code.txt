@@ -1,0 +1,62 @@
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (main)
+$ # Create branch
+git branch GitNewBranch
+
+# List branches
+git branch -a
+
+# Switch to branch
+git checkout GitNewBranch
+
+# Add a new file in this branch
+echo "This is a new branch file" > branchfile.txt
+git add branchfile.txt
+git commit -m "Added branchfile.txt in GitNewBranch"
+
+# Push branch to remote
+git push -u origin GitNewBranch
+  GitNewBranch
+* main
+  remotes/origin/main
+  remotes/origin/master
+Switched to branch 'GitNewBranch'
+warning: in the working copy of 'branchfile.txt', LF will be replaced by CRLF the next time Git touches it
+[GitNewBranch abbc1cb] Added branchfile.txt in GitNewBranch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branchfile.txt
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 399 bytes | 399.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for GitNewBranch, visit:
+remote:   https://gitlab.com/mitrajit-55-group/GitDemo/-/merge_requests/new?merge_request%5Bsource_branch%5D=GitNewBranch
+remote:
+To https://gitlab.com/mitrajit-55-group/GitDemo.git
+ * [new branch]      GitNewBranch -> GitNewBranch
+branch 'GitNewBranch' set up to track 'origin/GitNewBranch'.
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (GitNewBranch)
+$ git checkout master
+git pull
+branch 'master' set up to track 'origin/master'.
+Switched to a new branch 'master'
+Already up to date.
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git log --oneline --graph --decorate
+* 9785766 (HEAD -> master, origin/master) First commit - Added welcome.txt file - Contains welcome message
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git branch -d GitNewBranch
+git push origin --delete GitNewBranch
+warning: deleting branch 'GitNewBranch' that has been merged to
+         'refs/remotes/origin/GitNewBranch', but not yet merged to HEAD
+Deleted branch GitNewBranch (was abbc1cb).
+To https://gitlab.com/mitrajit-55-group/GitDemo.git
+ - [deleted]         GitNewBranch
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$

@@ -1,0 +1,90 @@
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git checkout master
+git status
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        debug.log
+        log/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git checkout -b GitWork
+echo "<message>Hello from GitWork branch</message>" > hello.xml
+git add hello.xml
+git commit -m "Added hello.xml in GitWork branch"
+Switched to a new branch 'GitWork'
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+[GitWork c01643a] Added hello.xml in GitWork branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.xml
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (GitWork)
+$ git checkout master
+echo "<message>Hello from Master branch</message>" > hello.xml
+git add hello.xml
+git commit -m "Added hello.xml in Master branch"
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+[master 9bad86a] Added hello.xml in Master branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.xml
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git log --oneline --graph --decorate --all
+* 9bad86a (HEAD -> master) Added hello.xml in Master branch
+| * c01643a (GitWork) Added hello.xml in GitWork branch
+|/
+| * 0b8d89f (origin/main, origin/HEAD, main) Added .gitignore to ignore log files and log folder
+| * b502777 Merge branch 'main' of https://gitlab.com/mitrajit-55-group/GitDemo
+|/|
+| * 0b0dd6a Initial commit
+* 9785766 (origin/master) First commit - Added welcome.txt file - Contains welcome message
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git merge GitWork
+Auto-merging hello.xml
+CONFLICT (add/add): Merge conflict in hello.xml
+Automatic merge failed; fix conflicts and then commit the result.
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master|MERGING)
+$ notepad++ hello.xml
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master|MERGING)
+$ git add hello.xml
+git commit -m "Resolved merge conflict in hello.xml"
+[master 62b111d] Resolved merge conflict in hello.xml
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ echo "*.orig" >> .gitignore
+git add .gitignore
+git commit -m "Ignore backup files"
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+[master 7a4b2fc] Ignore backup files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ ^[[200~git branch -d GitWork
+bash: $'\E[200~git': command not found
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git push origin --delete GitWork
+error: unable to delete 'GitWork': remote ref does not exist
+error: failed to push some refs to 'https://gitlab.com/mitrajit-55-group/GitDemo.git'
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$ git branch -d GitWork
+git push origin --delete GitWork
+Deleted branch GitWork (was c01643a).
+error: unable to delete 'GitWork': remote ref does not exist
+error: failed to push some refs to 'https://gitlab.com/mitrajit-55-group/GitDemo.git'
+
+ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+$
