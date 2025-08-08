@@ -4,18 +4,18 @@ cd GitDemo
 git init
 Initialized empty Git repository in C:/Users/ghosh/GitDemo/.git/
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m1 MINGW64 ~/GitDemo (master)
 $ echo "Welcome to Git Hands-On Lab" > welcome.txt
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m MINGW64 ~/GitDemo (master)
 $ ls
 welcome.txt
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m1 MINGW64 ~/GitDemo (master)
 $ cat welcome.txt
 Welcome to Git Hands-On Lab
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m1 MINGW64 ~/GitDemo (master)
 $ git status
 On branch master
 
@@ -27,11 +27,11 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m1 MINGW64 ~/GitDemo (master)
 $ git add welcome.txt
 warning: in the working copy of 'welcome.txt', LF will be replaced by CRLF the next time Git touches it
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m1 MINGW64 ~/GitDemo (master)
 $ git status
 On branch master
 
@@ -42,24 +42,24 @@ Changes to be committed:
         new file:   welcome.txt
 
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m1 ~/GitDemo (master)
 $ git commit
 Aborting commit due to empty commit message.
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m MINGW64 ~/GitDemo (master)
 $ git remote add origin https://gitlab.com/mitrajit-55-group/GitDemo.git
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m MINGW64 ~/GitDemo (master)
 $ git pull origin master
 fatal: couldn't find remote ref master
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m MINGW64 ~/GitDemo (master)
 $ git commit
 [master (root-commit) 9785766] First commit - Added welcome.txt file - Contains welcome message
  1 file changed, 1 insertion(+)
  create mode 100644 welcome.txt
 
-ghosh@ACER_NITRO_V MINGW64 ~/GitDemo (master)
+shreya@macbook_m MINGW64 ~/GitDemo (master)
 $ git push -u origin master
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -69,6 +69,6 @@ remote:
 remote: To create a merge request for master, visit:
 remote:   https://gitlab.com/mitrajit-55-group/GitDemo/-/merge_requests/new?merge_request%5Bsource_branch%5D=master
 remote:
-To https://gitlab.com/mitrajit-55-group/GitDemo.git
+To https://gitlab.com/shreya-45-group/GitDemo.git
  * [new branch]      master -> master
-branch 'master' set up to track 'origin/master'.
+branch 'master' set up to track
